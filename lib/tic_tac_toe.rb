@@ -65,7 +65,6 @@ def wins?(combo, board)
 end
 
 def full?(board)
-  puts board.inspect
   !(board.include?(" "))
 end
 
