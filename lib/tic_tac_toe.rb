@@ -106,7 +106,7 @@ def turn(board)
   end
 end
 
-def winningPlayer(winningCombo, board)
+define winningPlayer(winningCombo, board)
   board[winningCombo[0]]
 end
 
@@ -117,8 +117,9 @@ def play(board)
     turn(board)
   end
   
-  if won?(board)
-    puts "Congratulations!"
+  if (winningCombo = won?(board))
+    xOrO = winningPlayer(winningCombo, board)
+    puts "Congratulations #{xOrO}!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
