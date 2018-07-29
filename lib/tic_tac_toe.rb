@@ -112,14 +112,15 @@ end
 
 # Define your play method below
 def play(board)
+  
   while !(over?(board))
     turn(board)
   end
-  if (winningCombo = won?(board))
-    xOrO = winningPlayer(winningCombo, board)
-    puts "Congratulations #{xOrO}!"
+  
+  if won?(board)
+    puts "Congratulations!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
-#end
+end
 
