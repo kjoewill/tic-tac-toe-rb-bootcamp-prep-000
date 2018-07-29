@@ -106,7 +106,7 @@ def turn(board)
   end
 end
 
-define winningPlayer (winningCombo, board)
+define winningPlayer(winningCombo, board)
   board[winningCombo[0]]
 end
 
