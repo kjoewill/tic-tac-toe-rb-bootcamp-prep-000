@@ -117,9 +117,8 @@ def play(board)
     turn(board)
   end
   
-  if (winningCombo = won?(board))
-    xOrO = winningPlayer(winningCombo, board)
-    puts "Congratulations #{xOrO}!"
+  if (winner = winner(board))
+    puts "Congratulations #{winner}!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
