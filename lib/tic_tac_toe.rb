@@ -106,10 +106,6 @@ def turn(board)
   end
 end
 
-def winningPlayer(winningCombo, board)
-  board[winningCombo[0]]
-end
-
 # Define your play method below
 def play(board)
   
